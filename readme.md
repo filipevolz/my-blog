@@ -1,5 +1,5 @@
 <h1 align="center"> Projeto com FullStack </h1>
-<img src="./public/images/presentation.png" alt="Demonstração do projeto" width="100%"  />
+<img src="./public/images/presentation.jpg" alt="Demonstração do projeto" width="100%"  />
 
 # 🖥️ MyBlog
 
