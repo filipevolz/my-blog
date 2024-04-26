@@ -37,3 +37,40 @@ Este projeto é uma demonstração prática do aprendizado adquirido durante o c
 - URLs Dinâmicas: Cada artigo tem uma URL única baseada em seu ID, o que permite aos usuários acessar facilmente artigos específicos diretamente por meio de seus links.
 
 - Geração de IDs Únicos: Cada artigo é atribuído a um ID único gerado automaticamente, garantindo que não haja conflitos de identificação entre os artigos.
+
+## Como usar
+
+Para começar a usar o MyBlog localmente, siga estas etapas:
+
+1. **Clone o repositório:**
+
+    ```
+    git clone https://github.com/seu-usuario/myblog.git
+    ```
+
+2. **Instale as dependências:**
+
+    Navegue até o diretório do projeto e execute o seguinte comando para instalar as dependências necessárias:
+
+    ```
+    cd myblog
+    npm install
+    ```
+
+3. **Execute o projeto:**
+
+    Após a instalação das dependências, você pode iniciar o servidor local executando:
+
+    ```
+    node index.js
+    ```
+
+4. **Acesse o MyBlog:**
+
+    Abra um navegador da web e navegue até o seguinte URL:
+
+    ```
+    http://localhost:3000/home
+    ```
+
+    Agora você pode explorar e interagir com o MyBlog localmente!
