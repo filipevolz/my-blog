@@ -1,0 +1,11 @@
+@media only screen and (max-width: 950px) {
+    .content .posts {
+        grid-template-columns: 300px 300px;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .content .posts {
+        grid-template-columns: 300px;
+    }
+}

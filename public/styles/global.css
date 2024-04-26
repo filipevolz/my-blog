@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #F4F1DE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #495057;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+header #logo {
+    width: 40px;
+    height: 100%;
+    border-radius: 50%;
+}
+
+header div a {
+    display: flex;
+    color: #343a40;
+    justify-content: center;
+    gap: 5px;
+}
+
+
+.content .posts {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.content .posts .post a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 250px;
+    background-color: #F2CC8F;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.content .posts .post a:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.content .posts .post a .title {
+    color: #343a40;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.content .posts .post a .description,
+.content .posts .post a .data {
+    color: #495057;
+}
+
+/* style from post.ejs */
+
+section {
+    background-color:#F2CC8F;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+section .post-title {
+    color: #343a40;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+section .post-content {
+    color: #495060;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+section .data-post {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* styles from addPost.ejs */
+form {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #F2CC8F;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+textarea[name="description"]{
+    height: 50px;
+}
+
+textarea[name="content"] {
+    height: 200px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+    transition: 0.3s ease-in-out;
+}

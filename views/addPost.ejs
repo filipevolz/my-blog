@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="styles/fontawesome.min.css">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <title>Blog</title>
+</head>
+<body>
+    <%- include("partials/header.ejs") %>
+        <form action="/submit" method="POST">
+            <label for="">Titulo</label>
+            <input type="text" name="title" placeholder="Insira o título" required maxlength="22">
+            <label for="">Descrição</label>
+            <textarea type="text" name="description" placeholder="Insira a Descrição" required
+                maxlength="240"></textarea>
+            <label for="">Conteúdo</label>
+            <textarea type="text" name="content" placeholder="Insira o Conteudo" required></textarea>
+            <button type="submit" value="Submit">Enviar</button>
+        </form>
+</body>
+
+</html>
